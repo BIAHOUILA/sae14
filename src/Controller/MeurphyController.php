@@ -44,6 +44,15 @@ class MeurphyController extends AbstractController
             'controller_name' => 'MeurphyController',
         ]);
     }
+     /**
+     * @Route("/portfolio", name="portfolio")
+     */
+    public function portfolio()
+    {
+        return $this->render('meurphy/portfolio.html.twig', [
+            'controller_name' => 'MeurphyController',
+        ]);
+    }
 
     
     
