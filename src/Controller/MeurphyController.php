@@ -28,7 +28,7 @@ class MeurphyController extends AbstractController
     /**
      * @Route("/accueil", name="accueil")
      */
-    public function accueil(): Response
+    public function accueil()
     {
         return $this->render('meurphy/accueil.html.twig', [
             'controller_name' => 'MeurphyController',
@@ -49,6 +49,15 @@ class MeurphyController extends AbstractController
     public function portfolio()
     {
         return $this->render('meurphy/portfolio.html.twig', [
+            'controller_name' => 'MeurphyController',
+        ]);
+    }
+    /**
+     * @Route("/loisirs", name="loisirs")
+     */
+    public function loisirs()
+    {
+        return $this->render('meurphy/loisirs.html.twig', [
             'controller_name' => 'MeurphyController',
         ]);
     }
