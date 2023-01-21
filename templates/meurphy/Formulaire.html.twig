@@ -1,48 +1,103 @@
-<!DOCTYPE HTML PUBLIC "-//W3C/DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
-<html>
-  <head>
-  <meta http-equiv="Content-Type" content="text/html;charest=utf-8">
-  <title> Formulaire </title>
-  </head>
-  <body>
-    <h1> Formulaire à remplir </h1>
-    <form method="post" action="traitement.php">
-    <fieldset>
-    <legend> Veuillez remplir le formulaire</legend>
-
-    <label>Nom</label>
-    <input type="text" name="Nom">
-
-    <label>Prénom</label>
-    <input type="text" name="Prenom"><br>
-
-    <br><label>E-mail</label>
-    <input type="text" name="email">
-
-    <label> De quel pays êtes-vous ?</label>
-    
-
-    <label> Sexe </label><br> 
-    <select name="sexe">
-    <option value="Homme">Homme</option>
-    <option value="Femme">Femme</option>
-    <option value="Autre">Autre</option>
-
-    </select><br>
-
-    <br><label>Commentaire</label><br>
-    <textarea rows="10" cols="50"></textarea><br>
-    <form>
-
-     <input type="submit" value="Envoyer" name="submit" id="submitButton">
+    <!DOCTYPE HTML PUBLIC "-//W3C/DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+    <html>
+    <head>
+        <style>
+        #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        </style>
+    </head>
+    <body>
+        <img id="background" src="default-background.jpg" />
+        <script>
+        var img = document.getElementById("background");
+        img.src = "f.jpg";
+        img.style.backgroundSize = "cover";
+        </script>
+        <div style="position:relative; z-index:1">
+        <!-- your content here -->
+        </div>
+    </body>
+    </html>
 
 
-     </form>
+    <html>
+    <head>
+    <style>
+    a:link {
+    color: blue;
+    }
+    a:visited {
+    color: purple;
+    }
+    a:hover {
+    color: red;
+    }
+    a:active {
+    color: orange;
+    }
+    </style>
 
-    </fieldset>
+    <meta http-equiv="Content-Type" content="text/html;charest=utf-8">
+    <title> Formulaire </title>
+    </head>
+    <body>
+        <h1> Formulaire à remplir </h1>
+        <form method="post" action="traitement.php">
+        <fieldset>
+        <legend> Veuillez remplir le formulaire</legend>
 
-    </form>
-    <br><br>
-    <a href="http://127.0.0.1:8000/cv" target="http://127.0.0.1:8000/cv"> Téléchargement du CV </a>
+        <label>Nom</label>
+        <input type="text" name="Nom">
+
+        <label>Prénom</label>
+        <input type="text" name="Prenom"><br>
+
+        <br><label>E-mail</label>
+        <input type="text" name="email">
+
+        <label> De quel pays êtes-vous ?</label>
+        <select>
+        <option value="YYC">Canada</option>
+        <option value="CG">Congo(Brazzaville)</option>
+        <option value="FR">France</option>
+        <option value="CH">Suisse</option>
+        </select>
+
+        <form>
+
+        <label for="male">Masculin</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="female">Féminin</label>
+        <input type="radio" id="female" name="gender" value="female">
+        
+
+        </form>
+
+        </select><br>
+
+        <br><label>Commentaire</label><br>
+        <textarea rows="10" cols="50"></textarea><br>
+        <form>
+
+        <input type="submit" value="Envoyer" name="submit" id="submitButton">
+
+
+        </form>
+
+        </fieldset>
+
+        </form>
+        <br><br>
+        <a href="http://127.0.0.1:8000/cv" target="http://127.0.0.1:8000/cv"> Téléchargement du CV </a>
+    </html>
+
+
 
      
