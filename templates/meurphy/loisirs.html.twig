@@ -1,33 +1,39 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Hello NassirController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Loisirs </h1>
-</div>
-    <section>
-        <h2>My Passion</h2>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/trail.png" alt="Football">
-            <figcaption>Football</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/cuisine.jpg" alt="Food">
-            <figcaption>Food</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/gaming.jpg" alt="Gaming">
-            <figcaption>Gaming</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://cdn.pixabay.com/photo/2015/08/18/14/15/black-belt-894190_960_720.jpg" alt="Martial Arts">
-            <figcaption>Martial Arts</figcaption>
-        </figure>
-    </section>
-{% endblock %}
+<html>
+  <head>
+    <title>Page des Loisirs</title>
+    <style>
+    /* CSS styles for your page here */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Page des Loisirs</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#activites">Activités</a></li>
+        <li><a href="#evenements">Evenements</a></li>
+        <li><a href="#lieux">Lieux à visiter</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="activites">
+        <h2>Activités</h2>
+        <section id="activites">
+        <p>Description des activités proposées</p>
+        <img src="b.jpg" alt="Image de l'activité" width="300" height="200">
+      </section>
+      <section id="evenements">
+        <h2>Evenements</h2>
+        <p>Description des evenements à venir</p>
+      </section>
+      <section id="lieux">
+        <h2>Lieux à visiter</h2>
+        <p>Description des lieux à visiter</p>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © Your Name</p>
+    </footer>
+  </body>
+</html>
