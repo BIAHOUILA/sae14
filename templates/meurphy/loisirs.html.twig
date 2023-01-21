@@ -1,5 +1,29 @@
 <html>
   <head>
+  <html>
+  <head>
+    <style>
+      #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="background" src="default-background.jpg" />
+    <script>
+      var img = document.getElementById("background");
+      img.src = "no.jpg";
+      img.style.backgroundSize = "cover";
+    </script>
+    <!-- your content here -->
+  </body>
+</html>
+
     <title>Page des Loisirs</title>
     <style>
     /* CSS styles for your page here */
@@ -20,8 +44,8 @@
       <section id="activites">
         <h2>Activités</h2>
         <section id="activites">
-        <p>Description des activités proposées</p>
-        <img src="b.jpg" alt="Image de l'activité" width="300" height="200">
+        <p>Arts Martiaux</p>
+        <img src="k.jpg" alt="Image de l'activité" width="300" height="200">
       </section>
       <section id="evenements">
         <h2>Evenements</h2>
