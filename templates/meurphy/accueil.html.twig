@@ -11,4 +11,98 @@
 <div class="example-wrapper">
 <button type="button" class="btn btn-primary" onclick="window.location.href = 'http://127.0.0.1:8000/loisirs';">En savoir plus </button>
 </div>
+{#<button class="menu-btn">
+      <div class="menu-btn-bar"></div>
+      <div class="menu-btn-bar"></div>
+      <div class="menu-btn-bar"></div>
+    </button>
+    <nav class="menu-nav">
+      <a href="#">accueil</a>
+      <a href="#">Portfolio</a>
+    </nav>
+    
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const menuNav = document.querySelector('.menu-nav');
+      
+      menuBtn.addEventListener('click', () => {
+        menuNav.classList.toggle('open');
+        menuBtn.classList.toggle('open');
+      });
+    </script>
+
+    <style>
+      /* Styles pour le bouton de menu */
+      .menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 2em;
+        height: 2em;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+      }
+      /* Styles pour les barres du bouton de menu */
+      .menu-btn-bar {
+        width: 2em;
+        height: 0.25em;
+        background: #000;
+      }
+      /* Styles pour le menu naviguation */
+      .menu-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      /* Styles pour l'affichage du menu naviguation */
+      .menu-nav.open {
+        transform: translateX(0);
+      }
+      /* Styles pour le bouton de menu lorsque le menu est ouvert */
+      .menu-btn.open .menu-btn-bar:nth-of-type(1) {
+        transform: rotate(45deg);
+        transform-origin: center;
+      }
+      .menu-btn.open .menu-btn-bar:nth-of-type(2) {
+        opacity: 0;
+      }
+      .menu-btn.open .menu-btn-bar:nth-of-type(3) {
+        transform: rotate(-45deg);
+        transform-origin: center;
+      }
+    </style>#}
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>j</h3>
+        <p class="big-text">Hello, I am Meurphy Biahouila student in first year BUT RT at the I.U.T of Roanne.</p>
+      </div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <h3>Contacter Nous</h3>
+        <p>52 Boulevard de Belgique<br>
+        Roanne, 42300<br>
+        <br>
+        Tel: (+33) 7 52 39 01 67<br>
+        Email: biahouilameurphy@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 {% endblock %}
