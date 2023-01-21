@@ -24,12 +24,11 @@ class MeurphyController extends AbstractController
     {
         return $this->render('meurphy/cv.html.twig', [
             'controller_name' => 'MeurphyController',
-        ]);
-    }
+        ]);    }
     /**
      * @Route("/accueil", name="accueil")
      */
-    public function accueil()
+    public function accueil(): Response
     {
         return $this->render('meurphy/accueil.html.twig', [
             'controller_name' => 'MeurphyController',
