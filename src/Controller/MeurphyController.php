@@ -62,11 +62,11 @@ class MeurphyController extends AbstractController
         ]);
     }
      /**
-     * @Route("/Nous_contacter", name="Nous_contacter")
+     * @Route("/curriculum vitae", name="curriculum vitae")
      */
-    public function Nous_contacter()
+    public function curriculum()
     {
-        return $this->render('meurphy/Nous_contacter.html.twig', [
+        return $this->render('meurphy/curriculum vitae.html.twig', [
             'controller_name' => 'MeurphyController',
         ]);
     }
